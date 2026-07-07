@@ -1,0 +1,36 @@
+# Dependency directories (ignore node_modules globally)
+**/node_modules/
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build outputs
+/frontend/dist/
+/frontend/build/
+/dist/
+/build/
+
+# Local databases
+/backend/database.sqlite
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Local upload files (ignore uploads except for gitkeep placeholder)
+/backend/uploads/*
+!/backend/uploads/.gitkeep
+
+# IDE configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

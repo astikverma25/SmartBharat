@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "chat": "Ask Companion",
+    "report": "Report Issue",
+    "track": "Track Issue",
+    "schemes": "Explore Schemes",
+    "documents": "Checklists",
+    "admin": "Admin Console"
+  },
+  "home": {
+    "greeting": "Namaste, Riya",
+    "subtitle": "What would you like help with today?",
+    "recent_activity": "Recent Activity",
+    "no_activity": "No recent complaints filed yet.",
+    "tiles": {
+      "report": "Report a Civic Issue",
+      "report_desc": "File potholes, streetlights, garbage, water issues",
+      "documents": "Required Documents",
+      "documents_desc": "Get application checklists for standard services",
+      "schemes": "Find a Scheme",
+      "schemes_desc": "Explore public benefits based on your profile",
+      "track": "Track Complaint",
+      "track_desc": "Check resolution status using your Tracking ID"
+    }
+  },
+  "chat": {
+    "title": "Ask the Companion",
+    "placeholder": "Type your query here (e.g., How do I get a passport?)...",
+    "send": "Send",
+    "disclaimer_title": "Unverified Info",
+    "disclaimer_text": "This checklist is AI-generated and not from our local database. Please confirm details at the official portal.",
+    "action_checklist": "View Document Checklist",
+    "action_schemes": "Explore Schemes"
+  },
+  "report": {
+    "title": "Report a Civic Issue",
+    "desc_step": "Step 1: Describe the issue",
+    "desc_placeholder": "Tell us what is wrong. Example: The streetlight on the corner of Market Road is broken and blinking...",
+    "photo_label": "Add a photo (Optional)",
+    "location_step": "Step 2: Pin the Location",
+    "location_desc": "Move the map pin to mark where the issue is.",
+    "location_use_current": "Use Current Location",
+    "submit": "Submit Report",
+    "submitting": "Submitting...",
+    "success_title": "Report Submitted Successfully!",
+    "tracking_id": "Tracking ID",
+    "ai_summary": "AI Companion Summary",
+    "back_home": "Back to Home",
+    "track_now": "Track Status Now"
+  },
+  "track": {
+    "title": "Track a Complaint",
+    "placeholder": "Enter Tracking ID (e.g. SB-2026-123456)",
+    "search": "Search Status",
+    "searching": "Searching...",
+    "not_found": "No complaint found with this Tracking ID. Please double check.",
+    "details_title": "Complaint Details",
+    "status": {
+      "submitted": "Submitted",
+      "in_review": "In Review",
+      "in_progress": "In Progress",
+      "resolved": "Resolved"
+    },
+    "filed_on": "Filed On",
+    "last_updated": "Last Updated",
+    "category": "Category",
+    "urgency": "Urgency"
+  },
+  "schemes": {
+    "title": "Explore Government Schemes",
+    "profile_title": "Tell us about yourself (Optional)",
+    "age": "Age",
+    "occupation": "Occupation",
+    "income": "Monthly Family Income",
+    "state": "State",
+    "find_matches": "Show My Matches",
+    "skipping": "Skip & Show All",
+    "recommended": "Recommended for You",
+    "why_match": "Why it matches",
+    "visit_portal": "Official Portal",
+    "categories": {
+      "all": "All Categories",
+      "health": "Health",
+      "agriculture": "Agriculture",
+      "housing": "Housing",
+      "welfare": "Welfare",
+      "pension": "Pension",
+      "education": "Education"
+    }
+  },
+  "documents": {
+    "title": "Document Requirement Checklist",
+    "placeholder": "Search service (e.g. Passport, Aadhaar, Ration Card)",
+    "search": "Search Checklist",
+    "checklist_title": "Checklist of Documents",
+    "submission_at": "Where to submit",
+    "processing_time": "Estimated processing time",
+    "official_website": "Official Portal"
+  },
+  "categories": {
+    "pothole": "Pothole / Road",
+    "garbage": "Garbage Heap",
+    "streetlight": "Streetlight Issue",
+    "water": "Water / Sewage Leak",
+    "electricity": "Electricity Failure",
+    "other": "Other Civic Issue"
+  },
+  "urgency": {
+    "low": "Low Priority",
+    "medium": "Medium Priority",
+    "high": "High Priority"
+  }
+}

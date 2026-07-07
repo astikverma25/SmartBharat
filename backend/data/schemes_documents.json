@@ -1,0 +1,263 @@
+{
+  "schemes": [
+    {
+      "id": "s1",
+      "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "category": "agriculture",
+      "eligibility": "Small and marginal farmers with landholding up to 2 hectares.",
+      "eligibility_hi": "2 हेक्टेयर तक की जोत वाले छोटे और सीमांत किसान।",
+      "description": "Income support of ₹6,000 per year in three equal installments directly into bank accounts.",
+      "description_hi": "बैंक खातों में सीधे तीन समान किस्तों में ₹6,000 प्रति वर्ष की आय सहायता।",
+      "documents_required": ["Aadhaar Card", "Land holding papers", "Bank Account Details"],
+      "official_url": "https://pmkisan.gov.in/",
+      "processing_time": "15-30 days"
+    },
+    {
+      "id": "s2",
+      "name": "Ayushman Bharat (PM-JAY)",
+      "category": "health",
+      "eligibility": "Identified families under Socio-Economic Caste Census (SECC) data, poor and vulnerable families.",
+      "eligibility_hi": "सामाजिक-आर्थिक जाति जनगणना (SECC) डेटा के तहत पहचाने गए परिवार, गरीब और कमजोर परिवार।",
+      "description": "Health cover of ₹5 Lakh per family per year for secondary and tertiary care hospitalization.",
+      "description_hi": "माध्यमिक और तृतीयक देखभाल अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5 लाख का स्वास्थ्य कवर।",
+      "documents_required": ["Aadhaar Card", "Ration Card", "PM-JAY Letter or SECC Proof"],
+      "official_url": "https://pmjay.gov.in/",
+      "processing_time": "Instant (if pre-identified) or 7-10 days"
+    },
+    {
+      "id": "s3",
+      "name": "Pradhan Mantri Awas Yojana (PMAY-U / PMAY-G)",
+      "category": "housing",
+      "eligibility": "Families belonging to EWS (income < 3L), LIG (income 3-6L), or MIG categories who do not own a pucca house anywhere in India.",
+      "eligibility_hi": "EWS (आय < 3L), LIG (आय 3-6L), या MIG श्रेणियों से संबंधित परिवार जिनके पास भारत में कहीं भी पक्का घर नहीं है।",
+      "description": "Financial assistance and interest subsidy for building or buying a first home.",
+      "description_hi": "पहला घर बनाने या खरीदने के लिए वित्तीय सहायता और ब्याज सब्सिडी।",
+      "documents_required": ["Aadhaar Card", "Income Certificate", "Bank Passbook", "Affidavit of not owning a house"],
+      "official_url": "https://pmaymis.gov.in/",
+      "processing_time": "60-90 days"
+    },
+    {
+      "id": "s4",
+      "name": "PM Garib Kalyan Anna Yojana (PMGKAY)",
+      "category": "welfare",
+      "eligibility": "Antyodaya Anna Yojana (AAY) and Priority Households (PHH) cardholders.",
+      "eligibility_hi": "अंत्योदय अन्न योजना (AAY) और प्राथमिकता वाले परिवार (PHH) कार्डधारक।",
+      "description": "Provides 5kg free food grains (wheat or rice) per person per month to eligible beneficiaries.",
+      "description_hi": "पात्र लाभार्थियों को प्रति व्यक्ति प्रति माह 5 किलोग्राम मुफ्त खाद्यान्न (गेहूं या चावल) प्रदान करता है।",
+      "documents_required": ["Ration Card", "Aadhaar Card"],
+      "official_url": "https://nfsa.gov.in/",
+      "processing_time": "Immediate (based on ration distribution cycle)"
+    },
+    {
+      "id": "s5",
+      "name": "Pradhan Mantri Shram Yogi Maan-dhan (PM-SYM)",
+      "category": "pension",
+      "eligibility": "Unorganized workers aged 18-40 years with monthly income of ₹15,000 or less.",
+      "eligibility_hi": "18-40 वर्ष की आयु के असंगठित श्रमिक जिनकी मासिक आय ₹15,000 या उससे कम है।",
+      "description": "Voluntary pension scheme offering a assured minimum monthly pension of ₹3,000 after attaining 60 years.",
+      "description_hi": "60 वर्ष की आयु प्राप्त करने के बाद ₹3,000 की सुनिश्चित न्यूनतम मासिक पेंशन प्रदान करने वाली स्वैच्छिक पेंशन योजना।",
+      "documents_required": ["Aadhaar Card", "Savings Bank Account / Jan Dhan Account with IFSC"],
+      "official_url": "https://maandhan.in/",
+      "processing_time": "7-15 days"
+    },
+    {
+      "id": "s6",
+      "name": "Post Matric Scholarship Scheme",
+      "category": "education",
+      "eligibility": "Students belonging to SC/ST/OBC/Minority categories studying post-matric courses with family income below ₹2.5L/annum.",
+      "eligibility_hi": "SC/ST/OBC/अल्पसंख्यक श्रेणियों से संबंधित छात्र जो पोस्ट-मैट्रिक पाठ्यक्रमों में पढ़ रहे हैं और जिनकी पारिवारिक आय ₹2.5 लाख/वर्ष से कम है।",
+      "description": "Financial assistance for education fees and maintenance allowance for higher studies.",
+      "description_hi": "उच्च शिक्षा के लिए शिक्षा शुल्क और रखरखाव भत्ते के लिए वित्तीय सहायता।",
+      "documents_required": ["Caste Certificate", "Income Certificate", "Previous Marksheet", "Fee Receipt", "Aadhaar Card", "Bank Account Details"],
+      "official_url": "https://scholarships.gov.in/",
+      "processing_time": "30-60 days"
+    }
+  ],
+  "documents": [
+    {
+      "service": "Passport Application",
+      "service_hi": "पासपोर्ट आवेदन",
+      "description": "Apply for a new Indian passport or renewal.",
+      "description_hi": "नए भारतीय पासपोर्ट या नवीनीकरण के लिए आवेदन करें।",
+      "checklist": [
+        {
+          "name": "Proof of Identity",
+          "name_hi": "पहचान का प्रमाण",
+          "options": ["Aadhaar Card", "PAN Card", "Voter ID Card", "Driving License"],
+          "format": "Original & Photocopy (self-attested)"
+        },
+        {
+          "name": "Proof of Address",
+          "name_hi": "पते का प्रमाण",
+          "options": ["Water Bill / Electricity Bill", "Telephone Bill", "Aadhaar Card", "Bank Account Statement", "Rent Agreement"],
+          "format": "Original & Photocopy"
+        },
+        {
+          "name": "Proof of Date of Birth",
+          "name_hi": "जन्म तिथि का प्रमाण",
+          "options": ["Birth Certificate", "School Leaving Certificate / Matriculation Certificate"],
+          "format": "Original & Photocopy"
+        },
+        {
+          "name": "Non-ECR Category Proof (if applicable)",
+          "name_hi": "गैर-ईसीआर श्रेणी प्रमाण (यदि लागू हो)",
+          "options": ["10th Class Marksheet & Certificate"],
+          "format": "Original & Photocopy"
+        }
+      ],
+      "submission_location": "Passport Seva Kendra (PSK) / Post Office Passport Seva Kendra (POPSK)",
+      "submission_location_hi": "पासपोर्ट सेवा केंद्र (PSK) / डाकघर पासपोर्ट सेवा केंद्र (POPSK)",
+      "processing_time": "15-20 working days (Normal) or 3-5 days (Tatkaal)",
+      "processing_time_hi": "15-20 कार्य दिवस (सामान्य) या 3-5 दिन (तत्काल)",
+      "official_url": "https://www.passportindia.gov.in/"
+    },
+    {
+      "service": "New Aadhaar Card Registration",
+      "service_hi": "नया आधार कार्ड पंजीकरण",
+      "description": "Get enrolled in the unique identification database of India.",
+      "description_hi": "भारत के विशिष्ट पहचान डेटाबेस में नामांकित हों।",
+      "checklist": [
+        {
+          "name": "Proof of Identity (POI)",
+          "name_hi": "पहचान का प्रमाण",
+          "options": ["Passport", "PAN Card", "Ration Card", "Voter ID", "Driving License"],
+          "format": "Original physical document for scanning"
+        },
+        {
+          "name": "Proof of Address (POA)",
+          "name_hi": "पते का प्रमाण",
+          "options": ["Electricity Bill", "Water Bill", "Bank Statement/Passbook", "Ration Card", "Passport"],
+          "format": "Original physical document"
+        },
+        {
+          "name": "Proof of Relationship (POR)",
+          "name_hi": "संबंधों का प्रमाण (यदि लागू हो)",
+          "options": ["PDS Card", "MNREGA Job Card", "Birth Certificate", "Passport"],
+          "format": "Original physical document"
+        },
+        {
+          "name": "Proof of Date of Birth (PDB)",
+          "name_hi": "जन्म तिथि का प्रमाण",
+          "options": ["Birth Certificate", "SSLC Book/Certificate", "Passport"],
+          "format": "Original physical document"
+        }
+      ],
+      "submission_location": "Aadhaar Enrolment Centre (Govt Banks, Post Offices, or UIDAI Seva Kendras)",
+      "submission_location_hi": "आधार नामांकन केंद्र (सरकारी बैंक, डाकघर, या यूआईडीएआई सेवा केंद्र)",
+      "processing_time": "up to 90 days",
+      "processing_time_hi": "90 दिनों तक",
+      "official_url": "https://uidai.gov.in/"
+    },
+    {
+      "service": "New Ration Card Application",
+      "service_hi": "नया राशन कार्ड आवेदन",
+      "description": "Apply for a ration card for food subsidies based on family income.",
+      "description_hi": "पारिवारिक आय के आधार पर खाद्य सब्सिडी के लिए राशन कार्ड के लिए आवेदन करें।",
+      "checklist": [
+        {
+          "name": "Proof of Identity & Address of Head of Family",
+          "name_hi": "परिवार के मुखिया की पहचान और पते का प्रमाण",
+          "options": ["Aadhaar Card", "Voter ID", "PAN Card"],
+          "format": "Self-attested copies"
+        },
+        {
+          "name": "Family Details & Photographs",
+          "name_hi": "परिवार का विवरण और तस्वीरें",
+          "options": ["Group photograph of all family members", "Aadhaar numbers of all members"],
+          "format": "Physical photo + copy of Aadhaar"
+        },
+        {
+          "name": "Income Certificate",
+          "name_hi": "आय प्रमाण पत्र",
+          "options": ["Tehsildar income certificate", "Salary slip (if employed)"],
+          "format": "Original issued copy"
+        },
+        {
+          "name": "Surrender Certificate (if moving from another city/state)",
+          "name_hi": "समर्पण प्रमाण पत्र (यदि किसी अन्य शहर/राज्य से आ रहे हैं)",
+          "options": ["Surrender/Deletion certificate of previous ration card"],
+          "format": "Original copy"
+        }
+      ],
+      "submission_location": "Food & Civil Supplies Department Office / Citizen Service Centres (CSC)",
+      "submission_location_hi": "खाद्य एवं नागरिक आपूर्ति विभाग कार्यालय / नागरिक सेवा केंद्र (CSC)",
+      "processing_time": "15-30 days",
+      "processing_time_hi": "15-30 दिन",
+      "official_url": "https://nfsa.gov.in/"
+    },
+    {
+      "service": "PAN Card (Permanent Account Number)",
+      "service_hi": "पैन कार्ड (स्थायी खाता संख्या)",
+      "description": "Obtain a unique 10-character alphanumeric identifier for tax filings and financial transactions.",
+      "description_hi": "कर फाइलिंग और वित्तीय लेनदेन के लिए एक विशिष्ट 10-अक्षर अल्फ़ान्यूमेरिक पहचानकर्ता प्राप्त करें।",
+      "checklist": [
+        {
+          "name": "Proof of Identity",
+          "name_hi": "पहचान का प्रमाण",
+          "options": ["Aadhaar Card", "Voter ID", "Passport", "Driving License"],
+          "format": "Photocopy"
+        },
+        {
+          "name": "Proof of Address",
+          "name_hi": "पते का प्रमाण",
+          "options": ["Aadhaar Card", "Voter ID", "Passport", "Electricity Bill", "Bank Statement"],
+          "format": "Photocopy"
+        },
+        {
+          "name": "Proof of Date of Birth",
+          "name_hi": "जन्म तिथि का प्रमाण",
+          "options": ["Aadhaar Card", "Birth Certificate", "Matriculation Certificate"],
+          "format": "Photocopy"
+        },
+        {
+          "name": "Photographs",
+          "name_hi": "तस्वीरें",
+          "options": ["Two passport-size color photographs"],
+          "format": "Physical (to paste on application form, if applying offline)"
+        }
+      ],
+      "submission_location": "NSDL/UTIITSL Portal (Online) or PAN Facilitation Centres",
+      "submission_location_hi": "NSDL/UTIITSL पोर्टल (ऑनलाइन) या पैन सुविधा केंद्र",
+      "processing_time": "Instant (e-PAN online in 10 mins via Aadhaar) or 15 days (Physical Card)",
+      "processing_time_hi": "त्वरित (e-PAN आधार के माध्यम से 10 मिनट में ऑनलाइन) या 15 दिन (भौतिक कार्ड)",
+      "official_url": "https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"
+    },
+    {
+      "service": "Driving License Application",
+      "service_hi": "ड्राइविंग लाइसेंस आवेदन",
+      "description": "Apply for a Learner's License first, followed by a Permanent Driving License.",
+      "description_hi": "पहले लर्नर लाइसेंस के लिए आवेदन करें, उसके बाद स्थायी ड्राइविंग लाइसेंस के लिए।",
+      "checklist": [
+        {
+          "name": "Learner's License (For Permanent License)",
+          "name_hi": "लर्नर लाइसेंस (स्थायी लाइसेंस के लिए)",
+          "options": ["Valid Learner's License document"],
+          "format": "Original copy"
+        },
+        {
+          "name": "Proof of Age & Address",
+          "name_hi": "आयु और पते का प्रमाण",
+          "options": ["Aadhaar Card", "Passport", "Birth Certificate", "SSLC Certificate"],
+          "format": "Original & Photocopy"
+        },
+        {
+          "name": "Medical Certificate (Form 1A)",
+          "name_hi": "चिकित्सा प्रमाण पत्र (फॉर्म 1A)",
+          "options": ["Form 1A signed by a registered government doctor (mandatory for commercial or age > 40)"],
+          "format": "Original signed copy"
+        },
+        {
+          "name": "Application Form & Fee Receipt",
+          "name_hi": "आवेदन पत्र और शुल्क रसीद",
+          "options": ["Form 2 / Form 4 (online printout)", "Payment confirmation receipt"],
+          "format": "Printout"
+        }
+      ],
+      "submission_location": "Regional Transport Office (RTO) or online Sarathi portal",
+      "submission_location_hi": "क्षेत्रीय परिवहन कार्यालय (RTO) या ऑनलाइन सारथी पोर्टल",
+      "processing_time": "Learner's: same day. Permanent: 15-30 days after passing the driving test.",
+      "processing_time_hi": "लर्नर: उसी दिन। स्थायी: ड्राइविंग टेस्ट पास करने के 15-30 दिन बाद।",
+      "official_url": "https://sarathi.parivahan.gov.in/"
+    }
+  ]
+}
