@@ -34,3 +34,7 @@ Thumbs.db
 *.ntvs*
 *.njsproj
 *.sln
+
+# Project documentation files (excluded from GitHub)
+PRD.md
+design_doc.md
