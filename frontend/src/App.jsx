@@ -9,6 +9,7 @@ import TrackComplaint from './pages/TrackComplaint.jsx';
 import Schemes from './pages/Schemes.jsx';
 import Documents from './pages/Documents.jsx';
 import Admin from './pages/Admin.jsx';
+import { API_BASE_URL } from './config.js';
 
 // Import i18n
 import en from './i18n/en.json';
@@ -41,7 +42,7 @@ export default function App() {
   // Fetch recent complaints from database on mount or page change to Home
   useEffect(() => {
     if (page === 'home') {
-      fetch('/api/complaints')
+      fetch(`${API_BASE_URL}/complaints`)
         .then(res => {
           if (res.ok) return res.json();
           throw new Error('Failed to fetch');

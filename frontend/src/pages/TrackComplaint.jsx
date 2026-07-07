@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Search, MapPin, Calendar, Clock, AlertCircle, CheckCircle, RefreshCw, UserCheck, FileText } from 'lucide-react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { API_BASE_URL } from '../config.js';
 
 export default function TrackComplaint({ t }) {
   const isVideoUrl = (url) => {
@@ -40,7 +41,7 @@ export default function TrackComplaint({ t }) {
 
   // Fetch recent complaints on mount/status updates
   useEffect(() => {
-    fetch('/api/complaints')
+    fetch(`${API_BASE_URL}/complaints`)
       .then(res => res.ok ? res.json() : [])
       .then(data => setRecentList(data.slice(0, 5)))
       .catch(err => console.error(err));
@@ -72,7 +73,7 @@ export default function TrackComplaint({ t }) {
     setComplaint(null);
 
     try {
-      const response = await fetch(`/api/complaints/${id}`);
+      const response = await fetch(`${API_BASE_URL}/complaints/${id}`);
       if (!response.ok) {
         throw new Error('Complaint not found');
       }
@@ -127,7 +128,7 @@ Smart Bharat Portal - Digitizing Civic Care.`;
     setIsUpdatingStatus(true);
 
     try {
-      const response = await fetch(`/api/complaints/${complaint.tracking_id}`, {
+      const response = await fetch(`${API_BASE_URL}/complaints/${complaint.tracking_id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })

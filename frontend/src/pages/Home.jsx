@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AlertTriangle, AlertCircle, FileText, Search, ShieldAlert, Award, SearchCode } from 'lucide-react';
+import { API_BASE_URL } from '../config.js';
 
 export default function Home({ t, setPage, setInitialChatMessage, recentComplaints }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -7,7 +8,7 @@ export default function Home({ t, setPage, setInitialChatMessage, recentComplain
   const [loadingStats, setLoadingStats] = useState(true);
 
   useEffect(() => {
-    fetch('/api/complaints')
+    fetch(`${API_BASE_URL}/complaints`)
       .then(res => {
         if (res.ok) return res.json();
         throw new Error('Failed to fetch');

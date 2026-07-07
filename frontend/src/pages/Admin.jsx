@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Search, FileText, CheckCircle, Clock, AlertTriangle, AlertCircle, Eye, ArrowRight, RefreshCw } from 'lucide-react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { API_BASE_URL } from '../config.js';
 
 export default function Admin({ t }) {
   const [complaints, setComplaints] = useState([]);
@@ -27,7 +28,7 @@ export default function Admin({ t }) {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/complaints');
+      const res = await fetch(`${API_BASE_URL}/complaints`);
       if (!res.ok) throw new Error('Failed to load complaints');
       const data = await res.json();
       setComplaints(data);
@@ -41,7 +42,7 @@ export default function Admin({ t }) {
 
   const handleUpdateStatus = async (trackingId, newStatus) => {
     try {
-      const res = await fetch(`/api/complaints/${trackingId}`, {
+      const res = await fetch(`${API_BASE_URL}/complaints/${trackingId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })

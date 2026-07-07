@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Award, Briefcase, IndianRupee, Map, User, RefreshCw, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
+import { API_BASE_URL } from '../config.js';
 
 export default function Schemes({ t, language }) {
   const [age, setAge] = useState('');
@@ -45,7 +46,7 @@ export default function Schemes({ t, language }) {
       : { age, occupation, income_bracket: income, state, gender, language };
 
     try {
-      const response = await fetch('/api/schemes/recommend', {
+      const response = await fetch(`${API_BASE_URL}/schemes/recommend`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

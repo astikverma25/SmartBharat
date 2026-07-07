@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Camera, MapPin, CheckCircle, AlertTriangle, RefreshCw, ArrowLeft, ArrowRight } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet';
+import { API_BASE_URL } from '../config.js';
 import L from 'leaflet';
 
 // Fix Leaflet marker icon asset issue in Vite builds
@@ -202,7 +203,7 @@ export default function ReportIssue({ t, language, prefilledText, setPage, addRe
         formData.append('videos', v.file);
       });
 
-      const response = await fetch('/api/complaints', {
+      const response = await fetch(`${API_BASE_URL}/complaints`, {
         method: 'POST',
         body: formData
       });

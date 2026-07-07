@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, FileText, CheckSquare, Square, MapPin, Clock, AlertTriangle, ExternalLink, RefreshCw } from 'lucide-react';
+import { API_BASE_URL } from '../config.js';
 
 export default function Documents({ t, language, prefilledSearch, setPrefilledSearch }) {
   const [goal, setGoal] = useState('');
@@ -25,7 +26,7 @@ export default function Documents({ t, language, prefilledSearch, setPrefilledSe
     setCheckedItems({});
 
     try {
-      const response = await fetch('/api/documents/lookup', {
+      const response = await fetch(`${API_BASE_URL}/documents/lookup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ goal: term, language })

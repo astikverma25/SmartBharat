@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, Sparkles, HelpCircle, FileText, AlertTriangle, AlertCircle } from 'lucide-react';
+import { API_BASE_URL } from '../config.js';
 
 export default function Chat({
   t,
@@ -30,7 +31,7 @@ export default function Chat({
 
   useEffect(() => {
     // Check health endpoint on load
-    fetch('/api/health')
+    fetch(`${API_BASE_URL}/health`)
       .then(res => res.json())
       .then(data => {
         if (data.geminiConnected) {
@@ -76,7 +77,7 @@ export default function Chat({
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(`${API_BASE_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
